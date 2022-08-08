@@ -58,3 +58,10 @@
     clip: auto;
   }
 }
+
+@function fa-content($fa-var){
+  @return unquote("\"") + unquote(str-insert($fa-var, "\\", 1)) + unquote("\"");
+}
+
+/* _variables.scss */
+$fa-var-500px: f26e;
